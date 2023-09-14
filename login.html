@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <title>Log in page</title>
+  </head>
+  <body>
+    <section id="hero">
+      <div class="wrapper">
+
+        <nav class="navbar">
+          <h2 class="navbar__logo">Le Questel</h2>
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Accueil</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Menu</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Recettes</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Contact</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">A Emporter</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--formulaire mobile -->
+      <div class="container">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+          <ul id="menu">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Recettes</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">A Emporter</a></li>
+          </ul>
+         </div>
+        </nav>
+
+      </div>
+
+      <!--formulaire sign Up-->
+      <div class="formulaire">
+        <div class="wrapper">
+          <form>
+            <div class="input-within">
+              <input type="text" placeholder="User Name" />
+            </div>
+            <div class="input-within">
+              <input type="email" placeholder="Email Here" />
+            </div>
+            <div class="input-within">
+              <input type="password" placeholder="Password" />
+            </div>
+
+            <div class="rememberMe">
+              <label class="form-control">
+                <input type="checkbox" class="checkbox" />
+                Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn">Créer</button>
+            <p>J'ai déjà un <a href="#">compte</a></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
