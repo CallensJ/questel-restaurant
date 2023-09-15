@@ -75,20 +75,26 @@ a:hover {
   flex-direction: column;
   width: 25rem;
 }
-#hero .formulaire .wrapper form .input-within {
+#hero .formulaire .wrapper form .input-box {
   border: 1px solid #ffffff;
   border-radius: 0.5rem;
   margin: 1rem 0;
   width: 100%;
 }
-#hero .formulaire .wrapper form .input-within input {
+#hero .formulaire .wrapper form .input-box ::-moz-placeholder {
+  color: #ffffff;
+}
+#hero .formulaire .wrapper form .input-box ::placeholder {
+  color: #ffffff;
+}
+#hero .formulaire .wrapper form .input-box input {
   padding: 0.8rem;
   border: none;
   outline: none;
   background: transparent;
 }
-#hero .formulaire .wrapper form .input-within:focus-within {
-  border: 1px solid yellow;
+#hero .formulaire .wrapper form .input-box:focus-within {
+  border: 1px solid orange;
 }
 #hero .formulaire .wrapper form .rememberMe {
   margin-bottom: 1rem;

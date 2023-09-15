@@ -84,12 +84,14 @@ a:hover {
         flex-direction: column;
         width: 25rem;
 
-        .input-within {
+        .input-box {
           border: 1px solid $primary-white;
           border-radius: 0.5rem;
           margin: 1rem 0;
           width: 100%;
-
+          ::placeholder{
+            color: $primary-white;
+          }
           input {
             padding: 0.8rem;
             border: none;
@@ -97,8 +99,8 @@ a:hover {
             background: transparent;
           }
         }
-        .input-within:focus-within {
-          border: 1px solid yellow;
+        .input-box:focus-within {
+          border: 1px solid orange;
         }
 
         .rememberMe {
