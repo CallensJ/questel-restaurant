@@ -54,7 +54,6 @@ a:hover {
   justify-content: space-between;
 }
 #hero .formulaire {
-  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -63,11 +62,12 @@ a:hover {
 }
 #hero .formulaire .wrapper {
   display: flex;
-  border-radius: 0.5rem;
-  width: 65rem;
-  height: 40rem;
   justify-content: center;
+  align-items: center;
+  max-width: 65rem;
+  width: 60rem;
   background-color: hsla(216.92, 12.15%, 21%, 0.8);
+  height: 40rem;
 }
 #hero .formulaire .wrapper form {
   display: flex;
@@ -192,6 +192,7 @@ a:hover {
     transform: rotate(-45deg) translateY(-1rem);
   }
   #menu {
+    z-index: 1;
     width: 25rem;
     height: 100vh;
     margin: -5rem 0 0 -5rem;
@@ -207,5 +208,9 @@ a:hover {
   }
   #menu.active {
     transform: translate(0, 0);
+  }
+  .formulaire .wrapper {
+    position: absolute;
+    top: 10rem;
   }
 }/*# sourceMappingURL=login.css.map */

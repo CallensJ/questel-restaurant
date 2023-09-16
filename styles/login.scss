@@ -63,20 +63,22 @@ a:hover {
   }
 
   .formulaire {
-    height: auto;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 8rem;
-
+    
     .wrapper {
       display: flex;
-      border-radius: 0.5rem;
-      width: 65rem;
-      height: 40rem;
       justify-content: center;
+      align-items: center;
+      max-width: 65rem;
+      width: 60rem;
       background-color: $primary-background;
+      height: 40rem;
+   
 
       form {
         display: flex;
@@ -186,9 +188,7 @@ a:hover {
     position: relative;
     top: 2.5rem;
     left: 2.5rem;
-
     cursor: pointer;
-
     span {
       display: flex;
       width: 2.6rem;
@@ -211,6 +211,7 @@ a:hover {
   }
 
   #menu {
+    z-index: 1;
     width: 25rem;
     height: 100vh;
     margin: -5rem 0 0 -5rem;
@@ -227,5 +228,14 @@ a:hover {
 
   #menu.active {
     transform: translate(0, 0);
+  }
+
+  .formulaire{
+    .wrapper{
+      position: absolute;
+      top: 10rem;
+    
+      
+    }
   }
 }
