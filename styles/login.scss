@@ -63,22 +63,20 @@ a:hover {
   }
 
   .formulaire {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 8rem;
-    
+
     .wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
       max-width: 65rem;
-      width: 60rem;
+      width: 100%;
       background-color: $primary-background;
       height: 40rem;
-   
 
       form {
         display: flex;
@@ -230,12 +228,10 @@ a:hover {
     transform: translate(0, 0);
   }
 
-  .formulaire{
-    .wrapper{
+  .formulaire {
+    .wrapper {
       position: absolute;
       top: 10rem;
-    
-      
     }
   }
 }

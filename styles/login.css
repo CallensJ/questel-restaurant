@@ -65,7 +65,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   max-width: 65rem;
-  width: 60rem;
+  width: 100%;
   background-color: hsla(216.92, 12.15%, 21%, 0.8);
   height: 40rem;
 }
