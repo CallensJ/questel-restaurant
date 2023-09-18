@@ -39,11 +39,31 @@ a:hover {
   transition: 0.5s;
 }
 
+.btn {
+  background: transparent;
+  border: 1px solid $primary-white;
+  width: 10rem;
+  margin: 1rem auto;
+  color: $primary-white;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0;
+  outline: none;
+  cursor: pointer;
+  
+}
+.btn:hover {
+  color: orange;
+  transition: 0.5s;
+  border: 1px solid orange;
+}
+
 #hero {
   height: 100vh;
+  width: 100vw;
   background-image: url("./../signUp-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -53,12 +73,15 @@ a:hover {
     color: $primary-white;
     padding-left: 2rem;
     padding-right: 2rem;
+    font-size: 1.6rem;
     &__list {
       display: flex;
       font-family: "Judson", serif;
-      font-size: 1.4rem;
-      width: 30rem;
+      width: 20rem;
       justify-content: space-between;
+    }
+    .btn--signUp {
+      margin-right: 1rem;
     }
   }
 
@@ -142,15 +165,7 @@ a:hover {
         }
 
         .btn {
-          background: transparent;
-          border: 1px solid $primary-white;
           width: 10rem;
-          margin: 1rem auto;
-          color: $primary-white;
-          border-radius: 0.5rem;
-          padding: 0.4rem 0;
-          outline: none;
-          cursor: pointer;
         }
         p {
           color: $primary-white;
@@ -167,6 +182,7 @@ a:hover {
 }
 
 @media (min-width: 899px) {
+
   .container {
     display: none;
   }
@@ -185,6 +201,8 @@ a:hover {
     flex-direction: column;
     position: relative;
     top: 2.5rem;
+    
+    
     left: 2.5rem;
     cursor: pointer;
     span {
@@ -192,6 +210,7 @@ a:hover {
       width: 2.6rem;
       height: 0.2rem;
       background: $primary-white;
+      z-index: 1;
       transition: all 0.3s ease-in-out;
       margin-bottom: 5px;
     }
@@ -213,14 +232,26 @@ a:hover {
     width: 25rem;
     height: 100vh;
     margin: -5rem 0 0 -5rem;
-    padding: 5rem;
-    padding-top: 12rem;
+    
+    padding: 12rem 0 0 5rem;
     background-color: $primary-background;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s;
-    .menu__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    
+ 
+    .menu__item{
       padding: 1rem;
+      font-size: 1.4rem;
+    }
+    .buttons{
+      width: 100%;
+      
+      
     }
   }
 
