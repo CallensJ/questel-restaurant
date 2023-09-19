@@ -51,7 +51,7 @@ a:hover {
 #hero {
   height: 100vh;
   width: 100vw;
-  background-image: url("./../signUp-background.jpg");
+  background-image: url("./../Hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -73,61 +73,54 @@ a:hover {
   width: 20rem;
   justify-content: space-between;
 }
-#hero .navbar .btn--signUp {
-  margin-right: 1rem;
+#hero .navbar .btn--signup {
+  margin-right: rem;
 }
-#hero .formulaire {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8rem;
-}
-#hero .formulaire .wrapper {
+#hero .form .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 8rem auto;
   max-width: 65rem;
   width: 100%;
   background-color: hsla(216.92, 12.15%, 21%, 0.8);
   height: 40rem;
 }
-#hero .formulaire .wrapper form {
-  display: flex;
+#hero .form .wrapper form {
   justify-content: center;
   flex-direction: column;
   width: 25rem;
 }
-#hero .formulaire .wrapper form .input-box {
+#hero .form .wrapper form .input-box {
   border: 1px solid #ffffff;
   border-radius: 0.5rem;
   margin: 1rem 0;
   width: 100%;
 }
-#hero .formulaire .wrapper form .input-box ::-moz-placeholder {
+#hero .form .wrapper form .input-box ::-moz-placeholder {
   color: #ffffff;
 }
-#hero .formulaire .wrapper form .input-box ::placeholder {
+#hero .form .wrapper form .input-box ::placeholder {
   color: #ffffff;
 }
-#hero .formulaire .wrapper form .input-box input {
+#hero .form .wrapper form .input-box input {
   padding: 0.8rem;
   border: none;
   outline: none;
   background: transparent;
 }
-#hero .formulaire .wrapper form .input-box:focus-within {
+#hero .form .wrapper form .input-box:focus-within {
   border: 1px solid orange;
 }
-#hero .formulaire .wrapper form .rememberMe {
+#hero .form .wrapper form .rememberMe {
   margin-bottom: 1rem;
 }
-#hero .formulaire .wrapper form .rememberMe .form-control {
+#hero .form .wrapper form .rememberMe .form-control {
   display: grid;
   grid-template-columns: 1em auto;
   gap: 0.5em;
 }
-#hero .formulaire .wrapper form .rememberMe input[type=checkbox] {
+#hero .form .wrapper form .rememberMe input[type=checkbox] {
   display: grid;
   place-content: center;
   -webkit-appearance: none;
@@ -139,7 +132,7 @@ a:hover {
   border: 1px solid #ffffff;
   border-radius: 0.2rem;
 }
-#hero .formulaire .wrapper form .rememberMe input[type=checkbox]::before {
+#hero .form .wrapper form .rememberMe input[type=checkbox]::before {
   content: "";
   width: 0.8rem;
   height: 0.8rem;
@@ -147,92 +140,41 @@ a:hover {
   transition: 120ms transform ease-in-out;
   box-shadow: inset 1em 1em orange;
 }
-#hero .formulaire .wrapper form .rememberMe input[type=checkbox]:checked::before {
+#hero .form .wrapper form .rememberMe input[type=checkbox]:checked::before {
   transform: scale(1);
 }
-#hero .formulaire .wrapper form .rememberMe label {
+#hero .form .wrapper form .rememberMe label {
   color: #ffffff;
   font-size: 1rem;
   font-family: "Judson", serif;
 }
-#hero .formulaire .wrapper form .btn {
+#hero .form .wrapper form .btn {
   width: 10rem;
 }
-#hero .formulaire .wrapper form p {
+#hero .form .wrapper form p {
   color: #ffffff;
   font-family: "Judson", serif;
   text-align: center;
 }
-#hero .formulaire .wrapper form a {
+#hero .form .wrapper form a {
   color: orange;
   text-decoration: none;
+}
+#hero .form-signup {
+  display: none;
+}
+#hero .form-login {
+  display: none;
+}
+#hero .form-login.active {
+  display: initial;
+}
+#hero .form-signup.active {
+  display: initial;
 }
 
 @media (min-width: 899px) {
   .container {
     display: none;
-  }
-}
-@media (max-width: 900px) {
-  .wrapper {
-    display: none;
-  }
-  .navigation {
-    height: 65px;
-    background-color: hsl(216.92, 12.15%, 21%);
-  }
-  #menuToggle {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 2.5rem;
-    left: 2.5rem;
-    cursor: pointer;
-  }
-  #menuToggle span {
-    display: flex;
-    width: 2.6rem;
-    height: 0.2rem;
-    background: #ffffff;
-    z-index: 1;
-    transition: all 0.3s ease-in-out;
-    margin-bottom: 5px;
-  }
-  #menuToggle.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(1rem);
-  }
-  #menuToggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-  #menuToggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-1rem);
-  }
-  #menu {
-    z-index: 1;
-    width: 25rem;
-    height: 100vh;
-    margin: -5rem 0 0 -5rem;
-    padding: 12rem 0 0 5rem;
-    background-color: hsla(216.92, 12.15%, 21%, 0.8);
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  #menu .menu__item {
-    padding: 1rem;
-    font-size: 1.4rem;
-  }
-  #menu .buttons {
-    width: 100%;
-  }
-  #menu.active {
-    transform: translate(0, 0);
-  }
-  .formulaire .wrapper {
-    position: absolute;
-    top: 10rem;
   }
 }/*# sourceMappingURL=login.css.map */

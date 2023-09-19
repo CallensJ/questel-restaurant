@@ -49,7 +49,6 @@ a:hover {
   padding: 0.4rem 0;
   outline: none;
   cursor: pointer;
-  
 }
 .btn:hover {
   color: orange;
@@ -60,7 +59,7 @@ a:hover {
 #hero {
   height: 100vh;
   width: 100vw;
-  background-image: url("./../signUp-background.jpg");
+  background-image: url("./../Hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -80,29 +79,24 @@ a:hover {
       width: 20rem;
       justify-content: space-between;
     }
-    .btn--signUp {
-      margin-right: 1rem;
+    .btn--signup {
+      margin-right: rem;
     }
   }
 
-  .formulaire {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8rem;
-
+  .form {
     .wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 8rem auto;
       max-width: 65rem;
       width: 100%;
       background-color: $primary-background;
       height: 40rem;
 
       form {
-        display: flex;
+        //display: flex;
         justify-content: center;
         flex-direction: column;
         width: 25rem;
@@ -179,90 +173,26 @@ a:hover {
       }
     }
   }
+
+  .form-signup {
+    display: none;
+  }
+  .form-login {
+    display: none;
+  }
+
+  .form-login.active {
+    display: initial;
+  }
+  .form-signup.active {
+    display: initial;
+  }
 }
 
 @media (min-width: 899px) {
-
   .container {
     display: none;
   }
 }
 @media (max-width: 900px) {
-  .wrapper {
-    display: none;
-  }
-  .navigation {
-    height: 65px;
-    background-color: hsl(216.92, 12.15%, 21%);
-  }
-
-  #menuToggle {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 2.5rem;
-    
-    
-    left: 2.5rem;
-    cursor: pointer;
-    span {
-      display: flex;
-      width: 2.6rem;
-      height: 0.2rem;
-      background: $primary-white;
-      z-index: 1;
-      transition: all 0.3s ease-in-out;
-      margin-bottom: 5px;
-    }
-  }
-
-  #menuToggle.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(1rem);
-  }
-  #menuToggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  #menuToggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-1rem);
-  }
-
-  #menu {
-    z-index: 1;
-    width: 25rem;
-    height: 100vh;
-    margin: -5rem 0 0 -5rem;
-    
-    padding: 12rem 0 0 5rem;
-    background-color: $primary-background;
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    
-    
- 
-    .menu__item{
-      padding: 1rem;
-      font-size: 1.4rem;
-    }
-    .buttons{
-      width: 100%;
-      
-      
-    }
-  }
-
-  #menu.active {
-    transform: translate(0, 0);
-  }
-
-  .formulaire {
-    .wrapper {
-      position: absolute;
-      top: 10rem;
-    }
-  }
 }
